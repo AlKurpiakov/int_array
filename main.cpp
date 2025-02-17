@@ -13,7 +13,8 @@ int main(){
     vector<int> vec = {1,2,3,4,5,6,7};
 
     std::forward_list<int> list = {1,2,3,4,5,6,7};
-    for (auto it = vec.begin(); it != vec.end(); it++){
+    for (auto it = vec.cbegin(); it != vec.cend(); it++){
+       // *it = 10;
         cout << *(it) << endl;
     }
 
